@@ -2,26 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def generate_vector(start, stop, step):
-    return [x for x in range(start, stop + 1, step)]
-
-
-def fill_vector_with_values(vector_length, values):
-    num_segments = len(values)
-    segment_length = vector_length // num_segments
-
-    filled_vector = []
-
-    for value in values:
-        filled_vector.extend([value] * segment_length)
-
-    # Fill any remaining positions in case of rounding errors
-    remaining_length = vector_length - len(filled_vector)
-    filled_vector.extend([values[-1]] * (remaining_length + 1))
-
-    return filled_vector
-
-
 # Defining a ControlSystem class
 class ControlSystem:
     def __init__(
@@ -96,7 +76,6 @@ class ControlSystem:
 
             # Heater power input
             heater_power = self.heater_power + P + I + D
-            # heater_power = self.heater_power + P + I
 
             # Room temperature dynamics
             delta_temperature = (
@@ -112,6 +91,26 @@ class ControlSystem:
             time += self.time_step
             time_index += 1
         return temperature_history, heater_power_history
+
+
+def generate_vector(start, stop, step):
+    return [x for x in range(start, stop + 1, step)]
+
+
+def fill_vector_with_values(vector_length, values):
+    num_segments = len(values)
+    segment_length = vector_length // num_segments
+
+    filled_vector = []
+
+    for value in values:
+        filled_vector.extend([value] * segment_length)
+
+    # Fill any remaining positions in case of rounding errors
+    remaining_length = vector_length - len(filled_vector)
+    filled_vector.extend([values[-1]] * (remaining_length + 1))
+
+    return filled_vector
 
 
 # Defining the main function
@@ -144,7 +143,6 @@ def main():
                 simulation_duration
             )
             temperature_data = temperature_history  # Store the temperature data
-            # temperature_setpoint = control_system.target_temperature * np.ones(len(temperature_data))
             temperature_setpoint = control_system.target_temp_vec
             heater_power_data = heater_power_history
             time_points = [i * time_step for i in range(len(temperature_history))]
