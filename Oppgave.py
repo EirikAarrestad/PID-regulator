@@ -93,10 +93,6 @@ class ControlSystem:
         return temperature_history, heater_power_history
 
 
-def generate_vector(start, stop, step):
-    return [x for x in range(start, stop + 1, step)]
-
-
 def fill_vector_with_values(vector_length, values):
     num_segments = len(values)
     segment_length = vector_length // num_segments

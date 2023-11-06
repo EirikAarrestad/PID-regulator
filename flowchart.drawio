@@ -1,109 +1,216 @@
 <mxfile host="65bd71144e">
-    <diagram id="MvXd3hHmSmmwAjp6aix1" name="Page-1">
-        <mxGraphModel dx="2174" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <diagram id="ehz1RpYZ33W3WZLCxr4i" name="Page-1">
+        <mxGraphModel dx="2309" dy="854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="3" value="Programmet starter" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="40" width="120" height="60" as="geometry"/>
+                <mxCell id="2" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="40" width="140" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3">
+                <mxCell id="3" value="Initialiser ControllSystem-klassen" style="html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="150" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="2" target="3" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="360" y="250" as="sourcePoint"/>
-                        <mxPoint x="100" y="160" as="targetPoint"/>
+                        <mxPoint x="400" y="260" as="sourcePoint"/>
+                        <mxPoint x="450" y="210" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="20" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="12">
+                <mxCell id="5" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="260" as="sourcePoint"/>
+                        <mxPoint x="360" y="280.0000000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="6" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="120" y="520" as="targetPoint"/>
+                        <mxPoint x="120" y="320" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="12" value="Oppretter klassen ControlSystem og lager variabler" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="-40" y="160" width="320" height="270" as="geometry"/>
+                <mxCell id="28" style="edgeStyle=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="319.66666666666663" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="19" value="&lt;p class=&quot;MsoNormal&quot;&gt;initial_temperature=15,&lt;br&gt;&#10;target_temperature=25,&lt;br&gt;&#10;ambient_temperature=-5,&lt;br&gt;&#10;Kc=0.5,&lt;br&gt;&#10;Ti=1,&lt;br&gt;&#10;Td=0.1,&lt;br&gt;&#10;time_constant=2,&lt;br&gt;&#10;time_step=2,&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;rotation=0;" vertex="1" parent="12">
-                    <mxGeometry y="26" width="320" height="244" as="geometry"/>
+                <mxCell id="29" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6" target="51" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="480" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="24" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="22" target="23">
+                <mxCell id="30" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6" target="41" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="Choice input" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="280" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="31" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="670" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="Choice = 1" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="260" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;" parent="1" source="34" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="670" y="510" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="Set Target Temperature:" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="410" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=none;html=1;" parent="1" source="36" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="670" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="Input target temp." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="510.0000000000001" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="set_target_temperature()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="610" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="38" edge="1">
+                    <mxGeometry x="-1" relative="1" as="geometry">
+                        <mxPoint x="530" y="420" as="sourcePoint"/>
+                        <mxPoint x="360" y="240" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="780" y="640"/>
+                            <mxPoint x="780" y="240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="Choice = 2" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="525" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" style="edgeStyle=none;html=1;" parent="1" source="43" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="770" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="Set Initial &lt;br&gt;heater Power:" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="670" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=none;html=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="870" as="targetPoint"/>
+                        <mxPoint x="440" y="830" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="set_heater_power()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="870" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" style="edgeStyle=none;html=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="645" as="sourcePoint"/>
+                        <mxPoint x="440" y="670" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="Input initial heater power" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="355" y="770" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="46" edge="1">
+                    <mxGeometry x="-0.9469" y="-30" relative="1" as="geometry">
+                        <mxPoint x="440" y="670" as="sourcePoint"/>
+                        <mxPoint x="770" y="240" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="880" y="890"/>
+                            <mxPoint x="880" y="240"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" value="Choice = 3" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="165" y="485" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" style="edgeStyle=none;html=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="224.99999999999977" y="730" as="targetPoint"/>
+                        <mxPoint x="224.9999999999999" y="690" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="simulate()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="172.5" y="730" width="105" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" style="edgeStyle=none;html=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="224.99999999999977" y="605" as="sourcePoint"/>
+                        <mxPoint x="224.99999999999977" y="630" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="57" value="Set Target Temperature for Simulation" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="640" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;" parent="1" edge="1">
+                    <mxGeometry x="-0.3915" y="-59" relative="1" as="geometry">
+                        <mxPoint x="220" y="770" as="sourcePoint"/>
+                        <mxPoint x="870" y="240" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="220" y="960"/>
+                            <mxPoint x="960" y="960"/>
+                        </Array>
+                        <mxPoint x="-55" y="-39" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="60" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-50" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="60" value="Choice = 4" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="260" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="62" target="64" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" value="Vis nåværende temperatur" style="html=1;" vertex="1" parent="1">
-                    <mxGeometry x="30" y="520" width="170" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="23" value="La brukeren velge&lt;br&gt;mellom 4 valg" style="html=1;" vertex="1" parent="1">
-                    <mxGeometry x="60" y="600" width="110" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="25" value="1. Velg temperatur" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;" edge="1" parent="1">
-                    <mxGeometry x="-0.6522" y="30" relative="1" as="geometry">
-                        <mxPoint x="160" y="640" as="sourcePoint"/>
-                        <mxPoint x="400" y="640" as="targetPoint"/>
-                        <mxPoint as="offset"/>
+                <mxCell id="69" style="edgeStyle=none;html=1;" parent="1" source="62" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-45.00000000000023" y="570" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="27" value="2. Velg effekt" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="23">
-                    <mxGeometry x="-0.6842" y="-20" relative="1" as="geometry">
-                        <mxPoint x="170" y="650" as="sourcePoint"/>
-                        <mxPoint x="280" y="760" as="targetPoint"/>
-                        <mxPoint as="offset"/>
+                <mxCell id="62" value="Check for temperature data" style="html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-130" y="410" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="Error message" style="html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-390" y="410" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;exitX=0.436;exitY=-0.013;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="64" edge="1">
+                    <mxGeometry x="-1" y="70" relative="1" as="geometry">
+                        <mxPoint x="-290" y="360" as="sourcePoint"/>
+                        <mxPoint x="360" y="240" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="280" y="670"/>
+                            <mxPoint x="-266" y="240"/>
+                            <mxPoint x="-90" y="240"/>
                         </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="29" value="3. Simuler" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="23">
-                    <mxGeometry x="-0.0151" y="25" relative="1" as="geometry">
-                        <mxPoint x="70" y="700" as="sourcePoint"/>
-                        <mxPoint x="-40" y="750" as="targetPoint"/>
-                        <mxPoint as="offset"/>
-                        <Array as="points">
-                            <mxPoint x="88" y="690"/>
-                            <mxPoint x="50" y="690"/>
-                            <mxPoint x="50" y="750"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="31" value="4. Plot og avslutt" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="23">
-                    <mxGeometry x="0.1912" y="-35" relative="1" as="geometry">
-                        <mxPoint x="170" y="650" as="sourcePoint"/>
-                        <mxPoint x="-140" y="600" as="targetPoint"/>
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="32" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="31">
-                    <mxGeometry x="-1" relative="1" as="geometry"/>
+                <mxCell id="68" value="false" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+                    <mxGeometry x="-210" y="410" width="80" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" value="Skriv inn&amp;nbsp;&lt;br&gt;ønsket temperatur" style="html=1;" vertex="1" parent="1">
-                    <mxGeometry x="400" y="600" width="110" height="50" as="geometry"/>
+                <mxCell id="70" value="true" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+                    <mxGeometry x="-120" y="510" width="80" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="Gir den ønskede temperatuern til programmet" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="33" target="23">
-                    <mxGeometry x="-0.8414" y="-12" relative="1" as="geometry">
-                        <mxPoint x="290" y="730" as="sourcePoint"/>
-                        <mxPoint x="210" y="730" as="targetPoint"/>
-                        <mxPoint as="offset"/>
+                <mxCell id="73" style="edgeStyle=none;html=1;" parent="1" source="72" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-45" y="660" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="35" value="Skriv inn ønsket &lt;br&gt;effekt" style="html=1;" vertex="1" parent="1">
-                    <mxGeometry x="230" y="760" width="110" height="50" as="geometry"/>
+                <mxCell id="72" value="Create plots with data" style="html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-130" y="570" width="170" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="36" value="Gir den ønskede effekten til programmet" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="35" target="23">
-                    <mxGeometry x="-0.2655" y="84" relative="1" as="geometry">
-                        <mxPoint x="290" y="720" as="sourcePoint"/>
-                        <mxPoint x="120" y="770" as="targetPoint"/>
-                        <mxPoint x="1" as="offset"/>
+                <mxCell id="75" style="edgeStyle=none;html=1;" parent="1" source="74" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-45" y="760" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="38" value="Simulerer kontrolsystemet&lt;br&gt;- Printer resultat&lt;br&gt;- Pusher data til ulike arrayer" style="html=1;" vertex="1" parent="1">
-                    <mxGeometry x="-240" y="710" width="200" height="90" as="geometry"/>
+                <mxCell id="74" value="Show plot()" style="html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-105" y="660" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" value="Gir den ønskede effekten til programmet" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="38" target="23">
-                    <mxGeometry x="-1" y="110" relative="1" as="geometry">
-                        <mxPoint x="240" y="770" as="sourcePoint"/>
-                        <mxPoint x="125" y="660" as="targetPoint"/>
-                        <mxPoint x="-53" y="84" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="41" value="Grafen kommer på&lt;br&gt;skjærmen og programmet&lt;br&gt;avsluttes" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="-300" y="570" width="160" height="70" as="geometry"/>
+                <mxCell id="76" value="End" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-115" y="760" width="140" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
