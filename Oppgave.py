@@ -168,7 +168,7 @@ def main():
                 )
                 plt.xlabel("Time (hours)")
                 plt.ylabel("Temperature (°C)")
-                plt.title("Temperature vs. Time")
+                plt.title("Temperature / Time")
                 plt.grid(True)
                 plt.legend()
                 # Plot heater power
@@ -176,9 +176,9 @@ def main():
                 plt.plot(time_points, heater_power_data, label="Heater Power (Watts)")
                 plt.xlabel("Time (hours)")
                 plt.ylabel("Heater Power (Watts)")
-                plt.title("Heater Power vs. Time")
+                plt.title("Heater Power / Time")
                 plt.grid(True)
-                plt.legend()
+                plt.legend(loc="upper left")
                 plt.tight_layout()  # To ensure subplots don't overlap
                 plt.show()
             break
