@@ -27,7 +27,7 @@ class ControlSystem:
         self.ambient_temperature = ambient_temperature  # Ambient temperature
 
     def set_variating_target_temperature(
-        self, target_temp, duration, perturbed_target_temp=5, n_steps=3
+        self, target_temp, duration, perturbed_target_temp=5
     ):
         no_of_time_steps = int(duration / self.time_step)
         values_to_fill = [
@@ -144,7 +144,7 @@ def main():
             time_points = [i * time_step for i in range(len(temperature_history))]
             print("Simulation completed. Temperature history:")
             for i, temp in enumerate(temperature_history):
-                print(f"Time: {i * time_step:.2f}s, Temperature: {temp:.2f}°C")
+                print(f"Time: {i * time_step:.2f} h, Temperature: {temp:.2f}°C")
         elif choice == "4":
             if not temperature_data:
                 print("No simulation data available. Please run a simulation first.")
