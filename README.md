@@ -3,7 +3,7 @@
 En simulering i Python av en PID-regulator som styrer en varmeovn for å holde temperaturen i et rom på et ønsket nivå. Rommet er modellert som et førsteordens system som taper varme til omgivelsene, og regulatoren justerer varmeeffekten ut fra avviket mellom målt og ønsket temperatur.
 
 <p align="center">
-  <img src="img/simulering.png" width="80%" alt="Måltemperatur, målt temperatur og varmeeffekt over tid">
+  <img src="./simulering.png" width="80%" alt="Måltemperatur, målt temperatur og varmeeffekt over tid">
 </p>
 
 ## Resultater
