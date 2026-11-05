@@ -36,7 +36,6 @@ Standardparametere: $K_c = 0{,}5$, $T_i = 1$, $T_d = 0{,}01$, $\tau = 2$ og $\De
 
 ```
 ├── ControllSystem.py      # ControlSystem-klassen og interaktiv meny
-├── flowchart.drawio       # flytskjema for programmet
 └── simulering.png         # bilde av simuleringen
 ```
 
